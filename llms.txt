@@ -1,0 +1,40 @@
+# Muppaal Digital
+
+> Strategic Growth Consultant for B2B Brands
+
+Muppaal Digital (https://muppaaldigital.com) is the specialized B2B growth and AI search visibility (SEO, AEO, GEO) consulting practice led by Sivaprasad C.
+
+## The Muppaal Growth Strategy
+Three Dimensions. One Growth Strategy.
+
+- 01. Digital Foundation (BUILD): Website, Content, Social. Build a credible, consistent, and discoverable digital presence.
+- 02. Search & AI Visibility (REACH): SEO (Traditional Search), AEO (Answer Engine Optimization), GEO (Generative Engine Optimization). Make the business visible across traditional search engines, AI-powered platforms, and emerging discovery channels.
+- 03. Business Growth (GROW): Branding, Demand Generation, Conversion. Translate visibility into qualified opportunities and measurable business outcomes.
+
+## The 10-Pillar Audit Framework (292 Audit Subchecks)
+1. Business Alignment & Commercial Intent
+2. Entity & Knowledge Footprint (Wikidata QIDs, Knowledge Graph verification)
+3. Topical Authority & Semantic Depth
+4. Buyer Journey & Intent Architecture
+5. Search Visibility & SERP Ownership
+6. AI Visibility (GEO & LLM Mentions, Share of Model)
+7. Content Quality & E-E-A-T Effectiveness (EAV-E Prose structure)
+8. Technical Foundation & AI Accessibility (/llms.txt, JSON-LD @graph schemas)
+9. Competitive Intelligence & Share of Model
+10. Demand & Conversion Infrastructure
+
+## Industry Experience
+- Agency, Media, IT & SaaS, Healthcare, Finance & Accounting
+
+## Verified Outcomes
+- 67% AI Citation Rate (Paradiso Solutions case study)
+- +87.5% Organic Click Growth (Sundaram Business Services / TSF Group)
+- 30 Hours/Week Saved (Servion Global Solutions Marketing OS)
+- 33-35% Qualified Lead Conversion Rate
+
+## Principal Consultant
+- Sivaprasad C (12+ Years Experience)
+- Direct 1-on-1 strategic advisory and hands-on execution (No agency layers, no junior handoffs).
+- Location: Chennai, India (Remote worldwide)
+- Contact: siva@muppaaldigital.com | +91 9538923480
+- LinkedIn: https://www.linkedin.com/in/sivaprasad-chandrasekaran-54986032/

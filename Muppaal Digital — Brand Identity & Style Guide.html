@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Muppaal Digital — Brand Identity &amp; Style Guide</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&amp;family=Instrument+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<style>
+:root{--midnight:#0B2A3C;--slate:#4F6B7A;--copper:#C67A56;--neutral:#F7F4EF;--charcoal:#252B30;
+--bg:var(--neutral);--ink:var(--charcoal);--head:var(--midnight);--line:#ddd6cb;--card:#fff;--muted:#5d666c;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){color-scheme:dark;--bg:#14191d;--ink:#e9e5dd;--head:#f7f4ef;--line:#2e373d;--card:#1b2227;--muted:#a3adb3}}
+:root[data-theme="dark"]{color-scheme:dark;--bg:#14191d;--ink:#e9e5dd;--head:#f7f4ef;--line:#2e373d;--card:#1b2227;--muted:#a3adb3}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.6 "Instrument Sans",system-ui,sans-serif}
+h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;color:var(--head);margin:0;font-weight:600;line-height:1.1}
+h2{font-size:clamp(30px,4vw,44px);margin-bottom:12px}h3{font-size:24px;margin-bottom:6px}
+p{margin:0 0 12px;max-width:62ch}
+.wrap{max-width:1060px;margin:0 auto;padding:0 24px}
+section{padding:64px 0;border-top:1px solid var(--line)}
+.lead{color:var(--muted);font-size:18px;margin-bottom:32px}
+.grid{display:grid;gap:20px}.g2{grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}.g3{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.tile{border-radius:6px;display:flex;align-items:center;justify-content:center;padding:36px 20px;min-height:260px;border:1px solid var(--line)}
+.cap{font-size:13px;color:var(--muted);margin-top:8px}
+/* logo */
+svg.mark{display:block;overflow:visible}
+.mk{--a:var(--midnight);--b:var(--slate);--c:var(--copper);--gap:var(--neutral)}
+.lock{display:flex;flex-direction:column;align-items:center;text-align:center;color:var(--midnight)}
+.lock .name{font:600 clamp(44px,7vw,72px)/1 "Cormorant Garamond",serif;letter-spacing:.06em;margin-top:14px;color:var(--name,var(--midnight))}
+.lock .dig{display:flex;align-items:center;gap:14px;font:500 clamp(16px,2.4vw,22px)/1 "Instrument Sans",sans-serif;letter-spacing:.42em;color:var(--sub,var(--copper));margin-top:12px;padding-left:.42em}
+.lock .dig:before,.lock .dig:after{content:"";width:clamp(28px,6vw,64px);height:1px;background:currentColor}
+.lock .tag{font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--tag,var(--charcoal));margin-top:14px}
+.tile{container-type:inline-size;overflow:hidden}
+.tile .lock{width:100%;max-width:100%}
+.tile .lock .name{font-size:clamp(20px,13cqw,56px);letter-spacing:.05em;white-space:nowrap}
+.tile .lock .dig{font-size:clamp(10px,4.6cqw,18px);letter-spacing:.38em;gap:10px;white-space:nowrap}
+.tile .lock .dig:before,.tile .lock .dig:after{width:clamp(14px,8cqw,40px)}
+.tile .lock .tag{font-size:clamp(8px,3cqw,11px);letter-spacing:.12em;max-width:90%;line-height:1.5}
+.tile .hz .t{font-size:clamp(22px,9cqw,34px)}
+.lock.sm .name{font-size:34px}.lock.sm .dig{font-size:12px;margin-top:8px}.lock.sm .tag{display:none}
+.hz{display:flex;align-items:center;gap:16px}.hz .t{font:600 34px/1 "Cormorant Garamond",serif;letter-spacing:.06em;color:var(--name,var(--midnight))}.hz .t small{display:block;font:500 11px/1 "Instrument Sans",sans-serif;letter-spacing:.42em;color:var(--sub,var(--copper));margin-top:6px}
+.hero{padding:72px 0 56px;text-align:center}
+.hero .lock{--tag:var(--charcoal)}
+:root[data-theme="dark"] .hero .lock,.hero.dk .lock{--name:#f7f4ef}
+/* pillars */
+.pil{display:flex;gap:14px;align-items:flex-start}
+.sw{border-radius:6px;overflow:hidden;background:var(--card);border:1px solid var(--line)}
+.sw .c{height:120px}.sw .i{padding:14px 16px 16px;font-size:14px}.sw b{display:block;font-size:17px;color:var(--head)}
+.sw code{font:13px ui-monospace,Menlo,monospace;color:var(--muted)}
+.ratio{display:flex;height:56px;border-radius:6px;overflow:hidden;margin:12px 0 4px;border:1px solid var(--line)}
+.ratio i{display:block}
+.dd li,.dn li{margin-bottom:8px}ul{padding-left:20px;margin:0}
+.do,.dont{padding:20px 24px;border-radius:6px;border:1px solid var(--line);background:var(--card)}
+.do{border-top:4px solid var(--slate)}.dont{border-top:4px solid var(--copper)}
+.type-s{border-bottom:1px solid var(--line);padding:14px 0;display:flex;gap:20px;align-items:baseline;flex-wrap:wrap}
+.type-s span{width:150px;font-size:13px;color:var(--muted);flex:none}
+.stack{background:var(--midnight);color:#f7f4ef;border-radius:6px;padding:28px;display:grid;gap:14px}
+.stack div{border-radius:6px;padding:20px 22px;color:#fff}
+.stack b{font:600 24px/1.2 "Cormorant Garamond",serif;display:block}
+.stack small{opacity:.85;font-size:14px}
+.card{width:340px;max-width:100%;aspect-ratio:1.75;border-radius:4px;padding:24px;display:flex;flex-direction:column;justify-content:space-between;box-shadow:0 1px 0 var(--line)}
+.bad{position:relative}.bad .x{position:absolute;top:8px;right:10px;font-size:12px;color:var(--copper);font-weight:600}
+footer{padding:40px 0 56px;color:var(--muted);font-size:14px;border-top:1px solid var(--line)}
+@media (max-width:560px){section{padding:44px 0}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<defs>
+<symbol id="m" viewBox="0 0 200 200">
+<path d="M20 190V58L80 92V190Z" fill="var(--a)"/>
+<path d="M86 190V112L100 120L114 112V190Z" fill="var(--b)"/>
+<path d="M120 190V92L180 58V190Z" fill="var(--c)"/>
+<path d="M100 114C80 102 66 72 74 34C98 50 108 84 100 114Z" fill="var(--b)" stroke="var(--gap)" stroke-width="3" stroke-linejoin="round"/>
+<path d="M100 114C118 98 132 66 130 26C106 44 92 80 100 114Z" fill="var(--c)" stroke="var(--gap)" stroke-width="3" stroke-linejoin="round"/>
+</symbol>
+<symbol id="mono" viewBox="0 0 200 200">
+<path d="M20 190V58L80 92V190ZM86 190V112L100 120L114 112V190ZM120 190V92L180 58V190Z" fill="var(--a)"/>
+<path d="M100 114C80 102 66 72 74 34C98 50 108 84 100 114ZM100 114C118 98 132 66 130 26C106 44 92 80 100 114Z" fill="var(--a)" stroke="var(--gap)" stroke-width="3" stroke-linejoin="round"/>
+</symbol>
+</defs>
+</svg>
+
+<header class="hero"><div class="wrap">
+<div class="lock mk">
+<svg class="mark" width="190" height="190" role="img" aria-label="Muppaal Digital mark"><use href="#m"/></svg>
+<div class="name">MUPPAAL</div><div class="dig">DIGITAL</div>
+<div class="tag">Strategic growth consultant<br>for B2B brands</div>
+</div>
+<p style="margin:40px auto 0;color:var(--muted)">Brand identity and style guide · Version 1.0</p>
+</div></header>
+
+<section><div class="wrap">
+<h2>The idea behind the mark</h2>
+<p class="lead">Three pillars carry one growth strategy. A sprout rises from between them.</p>
+<div class="grid g2" style="align-items:center">
+<div class="tile mk" style="background:var(--neutral);--gap:#F7F4EF"><svg class="mark" width="230" height="230" aria-hidden="true"><use href="#m"/></svg></div>
+<div>
+<div class="grid" style="gap:14px">
+<div style="display:flex;gap:14px"><i style="width:14px;height:44px;background:var(--midnight);flex:none;border-radius:2px"></i><div><b>Midnight Blue pillar: Digital Foundation</b><br><span class="cap">Website, social and content. The base everything stands on.</span></div></div>
+<div style="display:flex;gap:14px"><i style="width:14px;height:44px;background:var(--slate);flex:none;border-radius:2px"></i><div><b>Slate Blue pillar: Search Visibility</b><br><span class="cap">SEO, AEO and GEO. Being found by engines and AI platforms.</span></div></div>
+<div style="display:flex;gap:14px"><i style="width:14px;height:44px;background:var(--copper);flex:none;border-radius:2px"></i><div><b>Copper pillar: Business Growth</b><br><span class="cap">Branding, demand generation and conversion. Visibility turned into results.</span></div></div>
+<div style="display:flex;gap:14px"><i style="width:14px;height:44px;background:linear-gradient(var(--slate) 50%,var(--copper) 50%);flex:none;border-radius:2px"></i><div><b>Two leaves: sprouting and growth</b><br><span class="cap">The slate leaf is what is taking root. The copper leaf is momentum. The leaves are separated from the pillars by a thin gap in the background colour.</span></div></div>
+</div></div></div>
+<p class="cap" style="margin-top:20px">The pillar colours match the three tiers of the Muppaal Framework, so the logo and the framework graphic always read as one system.</p>
+</div></section>
+
+<section><div class="wrap">
+<h2>Logo lockups</h2>
+<p class="lead">Use the primary lockup wherever space allows. Use the others when the layout calls for them.</p>
+<div class="grid g2">
+<div><div class="tile mk" style="background:var(--neutral);--gap:#F7F4EF;color:#0B2A3C"><div class="lock"><svg class="mark" width="120" height="120" aria-hidden="true"><use href="#m"/></svg><div class="name" style="--name:#0B2A3C">MUPPAAL</div><div class="dig" style="--sub:#C67A56">DIGITAL</div><div class="tag" style="--tag:#252B30">Strategic growth consultant<br>for B2B brands</div></div></div><div class="cap">Primary, stacked, on Warm Neutral</div></div>
+<div><div class="tile mk" style="background:#0B2A3C;--gap:#0B2A3C;--a:#F7F4EF"><div class="lock"><svg class="mark" width="120" height="120" aria-hidden="true"><use href="#m"/></svg><div class="name" style="--name:#F7F4EF">MUPPAAL</div><div class="dig" style="--sub:#C67A56">DIGITAL</div><div class="tag" style="--tag:#cfd8dc">Strategic growth consultant<br>for B2B brands</div></div></div><div class="cap">Reversed, on Midnight Blue. The first pillar turns Warm Neutral so it stays visible.</div></div>
+<div><div class="tile mk" style="background:#fff;--gap:#fff"><div class="hz"><svg class="mark" width="64" height="64" aria-hidden="true"><use href="#m"/></svg><div class="t">MUPPAAL<small>DIGITAL</small></div></div></div><div class="cap">Horizontal, for headers, email signatures and proposals</div></div>
+<div><div class="tile mk" style="background:var(--neutral);--gap:#F7F4EF;gap:40px;flex-wrap:wrap"><svg class="mark" width="96" height="96" aria-hidden="true"><use href="#m"/></svg><svg class="mark" width="96" height="96" style="--a:#252B30;--gap:#F7F4EF" aria-hidden="true"><use href="#mono"/></svg></div><div class="cap">Icon only, full colour and one colour (Charcoal). Use for avatars, favicons and stamps.</div></div>
+</div>
+<div class="grid g2" style="margin-top:28px">
+<div><h3>Clear space</h3><p>Keep a margin around the logo equal to the width of the middle pillar, measured from every edge of the lockup. Nothing else enters this zone.</p>
+<div class="tile mk" style="background:var(--card);min-height:180px;--gap:var(--card)"><div style="outline:1px dashed var(--copper);outline-offset:0;padding:22px"><svg class="mark" width="70" height="70" aria-hidden="true"><use href="#m"/></svg></div></div></div>
+<div><h3>Minimum size</h3><p>Full lockup: 120 px wide on screen, 30 mm in print. Icon only: 24 px or 8 mm. Below these sizes, switch to the icon alone.</p>
+<div class="tile mk" style="background:var(--card);min-height:180px;gap:36px;--gap:var(--card)"><svg class="mark" width="24" height="24" aria-hidden="true"><use href="#m"/></svg><svg class="mark" width="48" height="48" aria-hidden="true"><use href="#m"/></svg><svg class="mark" width="96" height="96" aria-hidden="true"><use href="#m"/></svg></div></div>
+</div></div></section>
+
+<section><div class="wrap">
+<h2>Colour palette</h2>
+<p class="lead">Five colours. Three of them are the pillars and are reserved for the mark and the framework.</p>
+<div class="grid g3" style="grid-template-columns:repeat(auto-fit,minmax(180px,1fr))">
+<div class="sw"><div class="c" style="background:#0B2A3C"></div><div class="i"><b>Midnight Blue</b><code>#0B2A3C · 11, 42, 60</code><br>Trust, intelligence, strategic thinking. Headlines, primary surfaces, the first pillar.</div></div>
+<div class="sw"><div class="c" style="background:#4F6B7A"></div><div class="i"><b>Slate Blue</b><code>#4F6B7A · 79, 107, 122</code><br>Clarity, discovery, credibility. Secondary surfaces, charts, the middle pillar.</div></div>
+<div class="sw"><div class="c" style="background:#C67A56"></div><div class="i"><b>Copper</b><code>#C67A56 · 198, 122, 86</code><br>Growth, opportunity, momentum. Accents, calls to action, the third pillar.</div></div>
+<div class="sw"><div class="c" style="background:#F7F4EF"></div><div class="i"><b>Warm Neutral</b><code>#F7F4EF · 247, 244, 239</code><br>Balance, simplicity, professionalism. Page backgrounds and breathing room.</div></div>
+<div class="sw"><div class="c" style="background:#252B30"></div><div class="i"><b>Charcoal</b><code>#252B30 · 37, 43, 48</code><br>Strength, versatility, modernity. Body text and one-colour logo.</div></div>
+</div>
+<h3 style="margin-top:36px">Proportion</h3>
+<div class="ratio"><i style="flex:50;background:#F7F4EF"></i><i style="flex:22;background:#0B2A3C"></i><i style="flex:10;background:#4F6B7A"></i><i style="flex:8;background:#C67A56"></i><i style="flex:10;background:#252B30"></i></div>
+<p class="cap">Roughly 50% Warm Neutral, 22% Midnight Blue, 10% Slate Blue, 10% Charcoal, 8% Copper. Copper stays rare so it keeps its signal.</p>
+<h3 style="margin-top:28px">Contrast</h3>
+<p>Set body text in Charcoal or Midnight Blue on Warm Neutral. Copper on Warm Neutral is too light for small text, so use it for large headings, icons, rules and button fills with Midnight Blue or white labels at 18 px and above.</p>
+</div></section>
+
+<section><div class="wrap">
+<h2>Typography</h2>
+<p class="lead">A classical serif for authority, a clean sans for clarity.</p>
+<div class="grid g2">
+<div class="sw" style="padding:24px"><div style="font:600 64px/1 'Cormorant Garamond',serif;color:var(--head)">Aa</div><b style="margin-top:12px">Cormorant Garamond</b><span class="cap">Semibold 600. Wordmark, headlines, pull quotes. Free on Google Fonts. The wordmark is set in capitals with 6% letter-spacing.</span></div>
+<div class="sw" style="padding:24px"><div style="font:500 64px/1 'Instrument Sans',sans-serif;color:var(--head)">Aa</div><b style="margin-top:12px">Instrument Sans</b><span class="cap">Regular 400 and Medium 500. Body copy, interface text, captions. The word “DIGITAL” and the tagline use wide letter-spacing (42% and 20%).</span></div>
+</div>
+<div style="margin-top:24px">
+<div class="type-s"><span>Display · 56/60</span><div style="font:600 56px/1.05 'Cormorant Garamond',serif;color:var(--head)">Growth, built to last</div></div>
+<div class="type-s"><span>Heading 1 · 40/44</span><div style="font:600 40px/1.1 'Cormorant Garamond',serif;color:var(--head)">Make the business discoverable</div></div>
+<div class="type-s"><span>Heading 2 · 28/34</span><div style="font:600 28px/1.2 'Cormorant Garamond',serif;color:var(--head)">Search visibility for B2B brands</div></div>
+<div class="type-s"><span>Body · 16/26</span><div style="max-width:56ch">We help B2B brands build a credible digital presence, get found across search and AI platforms, and turn attention into qualified opportunities.</div></div>
+<div class="type-s"><span>Caption · 13/18</span><div style="font-size:13px;color:var(--muted)">Source: client analytics, Q3 2026</div></div>
+</div></div></div></section>
+
+<section><div class="wrap">
+<h2>Applying the framework</h2>
+<p class="lead">The three pillar colours also colour-code the Muppaal Framework wherever it appears.</p>
+<div class="stack">
+<div style="background:#0B2A3C;border:1px solid #2a4658"><b>Digital Foundation</b><small>Website, social, content. Build a credible, consistent and discoverable digital presence.</small></div>
+<div style="background:#4F6B7A"><b>Search Visibility</b><small>SEO, AEO, GEO. Be found by search engines, answer engines and AI platforms.</small></div>
+<div style="background:#9a5b3f"><b>Business Growth</b><small>Branding, demand generation, conversion. Turn visibility into qualified opportunities.</small></div>
+</div>
+<p class="cap">On the framework graphic, the Copper tier is deepened to #9A5B3F so white text stays readable. Use this tone only for text-bearing fills.</p>
+<h3 style="margin-top:36px">Sample applications</h3>
+<div class="grid g2" style="margin-top:12px">
+<div class="card mk" style="background:#F7F4EF;border:1px solid var(--line);--gap:#F7F4EF"><svg class="mark" width="40" height="40" aria-hidden="true"><use href="#m"/></svg><div style="color:#252B30;font-size:13px;line-height:1.5"><b style="font:600 20px 'Cormorant Garamond',serif;color:#0B2A3C">Your Name</b><br>Strategic Growth Consultant<br>hello@muppaal.com · +91 00000 00000</div></div>
+<div class="card mk" style="background:#0B2A3C;--gap:#0B2A3C;--a:#F7F4EF;align-items:center;justify-content:center"><div class="lock" style="--name:#F7F4EF"><svg class="mark" width="64" height="64" aria-hidden="true"><use href="#m"/></svg><div class="name" style="font-size:30px;margin-top:8px">MUPPAAL</div><div class="dig" style="font-size:10px;margin-top:6px">DIGITAL</div></div></div>
+</div></div></section>
+
+<section><div class="wrap">
+<h2>Voice</h2>
+<p class="lead">Clear, confident and practical. We explain the strategy, then show the outcome.</p>
+<div class="grid g2">
+<div class="do"><h3>We write like this</h3><ul class="dd"><li>Plain verbs and specific outcomes: “Get found by AI search.”</li><li>Short sentences, sentence case.</li><li>Evidence before claims.</li></ul></div>
+<div class="dont"><h3>We avoid this</h3><ul class="dn"><li>Hype words such as “revolutionary” or “guru”.</li><li>Unexplained jargon. Spell out AEO and GEO on first use.</li><li>Promises we cannot measure.</li></ul></div>
+</div></div></section>
+
+<section><div class="wrap">
+<h2>Logo misuse</h2>
+<p class="lead">Keep the mark as drawn.</p>
+<div class="grid g2">
+<div class="do"><h3>Do</h3><ul><li>Use the supplied files at the sizes above.</li><li>Place on Warm Neutral, white or Midnight Blue.</li><li>Use the reversed version on dark photography with a Midnight Blue overlay.</li></ul></div>
+<div class="dont"><h3>Don’t</h3><ul><li>Recolour the pillars or swap their order.</li><li>Stretch, rotate, outline or add shadows.</li><li>Remove the leaves or change their colours.</li><li>Place the full-colour logo on Copper or busy images.</li><li>Use more than one logo on a single surface.</li></ul></div>
+</div></div></section>
+
+<footer><div class="wrap">Muppaal Digital · Brand guide v1.0. Placeholder contact details on the sample card should be replaced before print.</div></footer>
+</body>
+</html>
