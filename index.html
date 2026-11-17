@@ -134,17 +134,19 @@
                 <a href="#about-me" class="hover:text-midnight transition-colors">About</a>
             </nav>
 
-            <!-- CTA / Contact -->
-            <div class="hidden sm:flex items-center gap-4">
-                <a href="#lead-capture" class="px-5 py-2.5 rounded-md bg-copper hover:bg-copper-hover text-white font-medium text-xs tracking-wider uppercase shadow-sm transition-all flex items-center gap-2">
-                    Let's Talk Growth <i class="fa-solid fa-arrow-right text-[10px]"></i>
-                </a>
-            </div>
+            <!-- Header Right: CTA + Menu Toggle (Aligned together to the side) -->
+            <div class="flex items-center gap-3 sm:gap-4">
+                <div class="hidden sm:flex items-center">
+                    <a href="#lead-capture" class="px-5 py-2.5 rounded-md bg-copper hover:bg-copper-hover text-white font-medium text-xs tracking-wider uppercase shadow-sm transition-all flex items-center gap-2">
+                        Let's Talk Growth <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    </a>
+                </div>
 
-            <!-- Mobile Menu Toggle Button -->
-            <button id="mobile-menu-btn" class="lg:hidden text-midnight p-2 text-xl focus:outline-none" aria-label="Toggle Menu">
-                <i class="fa-solid fa-bars"></i>
-            </button>
+                <!-- Mobile Menu Toggle Button -->
+                <button id="mobile-menu-btn" class="lg:hidden text-midnight p-2 text-xl focus:outline-none" aria-label="Toggle Menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
         </div>
 
         <!-- Mobile Navigation Menu -->
@@ -170,53 +172,38 @@
             
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-center">
                 
-                <!-- Left Column (7 cols): Executive Value Proposition & CTAs -->
-                <div class="lg:col-span-7 space-y-6 text-left">
+                <!-- Left Column (7 cols): Executive Pitch & CTAs -->
+                <div class="lg:col-span-7 flex flex-col space-y-6 text-left">
                     
-                    <!-- Tagline Badge -->
-                    <div>
-                        <div class="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-white border border-borderLine shadow-2xs">
-                            <span class="w-2 h-2 rounded-full bg-copper animate-pulse"></span>
-                            <span class="text-xs font-mono font-semibold uppercase tracking-[0.16em] text-charcoal">Strategic Growth Consultant for B2B Brands</span>
+                    <!-- 1. Eyebrow Badge (Short on Mobile/Tablet, Full on Desktop) -->
+                    <div class="order-1">
+                        <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white border border-borderLine shadow-2xs">
+                            <span class="w-2 h-2 rounded-full bg-copper animate-pulse shrink-0"></span>
+                            <span class="text-[11px] sm:text-xs font-mono font-semibold uppercase tracking-wider text-charcoal">
+                                <span class="hidden lg:inline">Strategic Growth Consultant for B2B Brands</span>
+                                <span class="lg:hidden">B2B Growth &amp; AI Visibility</span>
+                            </span>
                         </div>
                     </div>
 
-                    <!-- Main Headline -->
-                    <h1 class="text-4xl sm:text-5xl lg:text-[3.75rem] xl:text-[4.15rem] font-serif font-semibold text-midnight tracking-tight leading-[1.12]">
+                    <!-- 2. Main Headline -->
+                    <h1 class="order-2 text-4xl sm:text-5xl lg:text-[3.75rem] xl:text-[4.15rem] font-serif font-semibold text-midnight tracking-tight leading-[1.12]">
                         Get Discovered.<br>
                         Earn Trust. <span class="italic text-copper">Win Customers.</span>
                     </h1>
 
-                    <!-- Subheading -->
-                    <p class="text-base sm:text-lg text-charcoal/85 font-normal leading-relaxed max-w-2xl">
+                    <!-- 3. Subheading -->
+                    <p class="order-3 text-base sm:text-lg text-charcoal/85 font-normal leading-relaxed max-w-2xl">
                         I bring together search strategy, AI visibility, brand authority and demand generation to help businesses build a stronger digital presence and attract the right opportunities.
                     </p>
 
-                    <!-- Dual CTAs -->
-                    <div class="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5">
-                        <a href="#lead-capture" class="px-7 py-3.5 rounded-lg bg-copper hover:bg-copper-hover text-white font-medium text-xs tracking-wider uppercase shadow-md transition-all flex items-center justify-center gap-2">
-                            <span>Let's Talk Growth</span>
-                            <i class="fa-solid fa-arrow-right text-xs"></i>
-                        </a>
-                        <a href="#framework" class="px-7 py-3.5 rounded-lg bg-white hover:bg-warmNeutral text-midnight border border-borderLine font-medium text-xs tracking-wider uppercase transition-all shadow-xs flex items-center justify-center gap-2">
-                            <span>Explore The Framework</span>
-                            <i class="fa-solid fa-arrow-down text-xs text-copper"></i>
-                        </a>
-                    </div>
-
-                    <!-- Trust Note -->
-                    <div class="flex items-start sm:items-center gap-2 text-xs font-mono text-muted pt-0.5">
-                        <i class="fa-solid fa-shield-halved text-copper text-[11px] mt-0.5 sm:mt-0 shrink-0"></i>
-                        <span>No agency layers &middot; Direct executive advisory with Sivaprasad C</span>
-                    </div>
-
-                    <!-- 3 Stats Strip (Executive Telemetry Style) -->
-                    <div class="pt-4 max-w-xl">
+                    <!-- 4. 3 Stats Strip: order-4 on Mobile/Tablet (ABOVE CTAs), order-5 on Desktop (BELOW CTAs) -->
+                    <div class="order-4 lg:order-5 max-w-xl">
                         <div class="rounded-xl bg-white/90 backdrop-blur-sm border border-borderLine/80 p-4 sm:p-5 shadow-xs">
                             <div class="grid grid-cols-3 divide-x divide-borderLine/70 text-left">
                                 
                                 <!-- 12+ Yrs Experience -->
-                                <div class="px-3 sm:px-4 first:pl-0">
+                                <div class="px-2.5 sm:px-4 first:pl-0">
                                     <div class="text-2xl sm:text-[1.65rem] font-sans font-bold text-midnight tracking-tight flex items-baseline gap-1">
                                         <span>12+</span>
                                         <span class="font-serif italic text-xs sm:text-sm text-copper font-normal">Yrs</span>
@@ -226,7 +213,7 @@
                                 </div>
 
                                 <!-- 10 Pillars Framework -->
-                                <div class="px-3 sm:px-4">
+                                <div class="px-2.5 sm:px-4">
                                     <div class="text-2xl sm:text-[1.65rem] font-sans font-bold text-midnight tracking-tight flex items-baseline gap-1">
                                         <span>10</span>
                                         <span class="font-serif italic text-xs sm:text-sm text-copper font-normal">Pillars</span>
@@ -236,7 +223,7 @@
                                 </div>
 
                                 <!-- 292 Items Checklist -->
-                                <div class="px-3 sm:px-4 last:pr-0">
+                                <div class="px-2.5 sm:px-4 last:pr-0">
                                     <div class="text-2xl sm:text-[1.65rem] font-sans font-bold text-midnight tracking-tight flex items-baseline gap-1">
                                         <span>292</span>
                                         <span class="font-serif italic text-xs sm:text-sm text-copper font-normal">Items</span>
@@ -249,9 +236,21 @@
                         </div>
                     </div>
 
+                    <!-- 5. Dual CTAs: order-5 on Mobile/Tablet (BELOW Stats Strip), order-4 on Desktop (ABOVE Stats Strip) -->
+                    <div class="order-5 lg:order-4 pt-1 flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5">
+                        <a href="#lead-capture" class="px-7 py-3.5 rounded-lg bg-copper hover:bg-copper-hover text-white font-medium text-xs tracking-wider uppercase shadow-md transition-all flex items-center justify-center gap-2">
+                            <span>Let's Talk Growth</span>
+                            <i class="fa-solid fa-arrow-right text-xs"></i>
+                        </a>
+                        <a href="#framework" class="px-7 py-3.5 rounded-lg bg-white hover:bg-warmNeutral text-midnight border border-borderLine font-medium text-xs tracking-wider uppercase transition-all shadow-xs flex items-center justify-center gap-2">
+                            <span>Explore The Framework</span>
+                            <i class="fa-solid fa-arrow-down text-xs text-copper"></i>
+                        </a>
+                    </div>
+
                 </div>
 
-                <!-- Right Column (5 cols): Live Growth OS Telemetry Card (Ramp / Brex Style) -->
+                <!-- Right Column (5 cols): Key Industry Statistics (B2B & AI Visibility Intelligence) -->
                 <div class="lg:col-span-5">
                     
                     <div class="relative rounded-2xl bg-white border border-borderLine shadow-xl overflow-hidden">
@@ -268,99 +267,93 @@
                         <!-- Card Header -->
                         <div class="px-5 sm:px-6 py-4 border-b border-borderLine bg-warmNeutral/50 flex items-center justify-between">
                             <div class="flex items-center gap-2.5">
-                                <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
-                                <span class="text-xs font-mono font-bold text-midnight uppercase tracking-wider">Muppaal Growth OS</span>
+                                <span class="w-2.5 h-2.5 rounded-full bg-copper animate-pulse"></span>
+                                <span class="text-xs font-mono font-bold text-midnight uppercase tracking-wider">Search &amp; AI Intelligence</span>
                             </div>
-                            <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-white text-copper border border-borderLine font-semibold">
-                                292 Diagnostics
+                            <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-white text-midnight border border-borderLine font-semibold">
+                                Industry Shift
                             </span>
                         </div>
 
-                        <!-- Card Body: 5 Strategic Scores Dashboard Telemetry -->
+                        <!-- Card Body: Key Industry Statistics Relevant to B2B & AI Visibility -->
                         <div class="p-5 sm:p-6 space-y-4">
                             
                             <div class="flex items-center justify-between text-xs font-mono text-muted pb-1 border-b border-borderLine/50">
-                                <span>Core Strategic Telemetry</span>
-                                <span class="text-charcoal/80 font-semibold">Evaluated Benchmark</span>
+                                <span>Key Market Benchmarks</span>
+                                <span class="text-charcoal/80 font-semibold">B2B Decision Shift</span>
                             </div>
 
-                            <!-- Telemetry Meter 01: Visibility -->
-                            <div class="space-y-1.5">
-                                <div class="flex items-center justify-between text-xs font-sans">
-                                    <span class="font-medium text-midnight flex items-center gap-1.5">
-                                        <i class="fa-solid fa-magnifying-glass text-copper text-[11px]"></i>
-                                        01 &middot; Search &amp; LLM Visibility
-                                    </span>
-                                    <span class="font-mono font-bold text-midnight text-xs">88 <span class="text-muted font-normal text-[10px]">/ 100</span></span>
+                            <!-- Stat 01: 94% B2B Buyers Use LLMs -->
+                            <div class="p-3 rounded-xl bg-warmNeutral/40 border border-borderLine/70 flex items-start gap-3.5 hover:border-midnight/30 transition-colors">
+                                <div class="font-sans font-bold text-2xl sm:text-3xl text-midnight tracking-tight shrink-0 w-14">
+                                    94<span class="text-copper text-lg font-serif italic">%</span>
                                 </div>
-                                <div class="w-full bg-warmNeutral rounded-full h-2 overflow-hidden border border-borderLine/40">
-                                    <div class="bg-midnight h-2 rounded-full" style="width: 88%"></div>
-                                </div>
-                            </div>
-
-                            <!-- Telemetry Meter 02: Authority -->
-                            <div class="space-y-1.5">
-                                <div class="flex items-center justify-between text-xs font-sans">
-                                    <span class="font-medium text-midnight flex items-center gap-1.5">
-                                        <i class="fa-solid fa-cubes text-slate text-[11px]"></i>
-                                        02 &middot; Entity &amp; Knowledge Graph
-                                    </span>
-                                    <span class="font-mono font-bold text-slate text-xs">94 <span class="text-muted font-normal text-[10px]">/ 100</span></span>
-                                </div>
-                                <div class="w-full bg-warmNeutral rounded-full h-2 overflow-hidden border border-borderLine/40">
-                                    <div class="bg-slate h-2 rounded-full" style="width: 94%"></div>
+                                <div class="space-y-0.5 min-w-0">
+                                    <div class="flex items-center justify-between gap-2">
+                                        <h4 class="text-xs font-sans font-bold text-midnight uppercase tracking-wide">B2B Buyers Research via LLMs</h4>
+                                        <span class="text-[9px] font-mono text-muted shrink-0">Gartner</span>
+                                    </div>
+                                    <p class="text-xs text-charcoal/80 leading-relaxed">
+                                        Decision-makers use ChatGPT, Claude &amp; Perplexity to evaluate vendors before contacting sales.
+                                    </p>
                                 </div>
                             </div>
 
-                            <!-- Telemetry Meter 03: AI Readiness -->
-                            <div class="space-y-1.5">
-                                <div class="flex items-center justify-between text-xs font-sans">
-                                    <span class="font-medium text-midnight flex items-center gap-1.5">
-                                        <i class="fa-solid fa-file-code text-copper text-[11px]"></i>
-                                        03 &middot; AI Answer Citation Rate
-                                    </span>
-                                    <span class="font-mono font-bold text-copper text-xs">91 <span class="text-muted font-normal text-[10px]">/ 100</span></span>
+                            <!-- Stat 02: 69% Zero-Click Searches -->
+                            <div class="p-3 rounded-xl bg-warmNeutral/40 border border-borderLine/70 flex items-start gap-3.5 hover:border-slate/40 transition-colors">
+                                <div class="font-sans font-bold text-2xl sm:text-3xl text-slate tracking-tight shrink-0 w-14">
+                                    69<span class="text-copper text-lg font-serif italic">%</span>
                                 </div>
-                                <div class="w-full bg-warmNeutral rounded-full h-2 overflow-hidden border border-borderLine/40">
-                                    <div class="bg-copper h-2 rounded-full" style="width: 91%"></div>
-                                </div>
-                            </div>
-
-                            <!-- Telemetry Meter 04: Commercial Intent -->
-                            <div class="space-y-1.5">
-                                <div class="flex items-center justify-between text-xs font-sans">
-                                    <span class="font-medium text-midnight flex items-center gap-1.5">
-                                        <i class="fa-solid fa-chart-column text-[#B39378] text-[11px]"></i>
-                                        04 &middot; Commercial Buyer Intent
-                                    </span>
-                                    <span class="font-mono font-bold text-[#9A5B3F] text-xs">86 <span class="text-muted font-normal text-[10px]">/ 100</span></span>
-                                </div>
-                                <div class="w-full bg-warmNeutral rounded-full h-2 overflow-hidden border border-borderLine/40">
-                                    <div class="bg-[#B39378] h-2 rounded-full" style="width: 86%"></div>
+                                <div class="space-y-0.5 min-w-0">
+                                    <div class="flex items-center justify-between gap-2">
+                                        <h4 class="text-xs font-sans font-bold text-midnight uppercase tracking-wide">Google Searches End Zero-Click</h4>
+                                        <span class="text-[9px] font-mono text-muted shrink-0">SparkToro</span>
+                                    </div>
+                                    <p class="text-xs text-charcoal/80 leading-relaxed">
+                                        Over half of search queries are resolved directly within Google AI Overviews without website visits.
+                                    </p>
                                 </div>
                             </div>
 
-                            <!-- Telemetry Meter 05: Opportunity ROI -->
-                            <div class="space-y-1.5">
-                                <div class="flex items-center justify-between text-xs font-sans">
-                                    <span class="font-medium text-midnight flex items-center gap-1.5">
-                                        <i class="fa-solid fa-bullseye text-[#3E6554] text-[11px]"></i>
-                                        05 &middot; Opportunity Prioritization
-                                    </span>
-                                    <span class="font-mono font-bold text-[#3E6554] text-xs">95 <span class="text-muted font-normal text-[10px]">/ 100</span></span>
+                            <!-- Stat 03: 70%+ Dark Funnel Exploration -->
+                            <div class="p-3 rounded-xl bg-warmNeutral/40 border border-borderLine/70 flex items-start gap-3.5 hover:border-copper/40 transition-colors">
+                                <div class="font-sans font-bold text-2xl sm:text-3xl text-copper tracking-tight shrink-0 w-14">
+                                    70<span class="text-copper-deep text-lg font-serif italic">%+</span>
                                 </div>
-                                <div class="w-full bg-warmNeutral rounded-full h-2 overflow-hidden border border-borderLine/40">
-                                    <div class="bg-[#3E6554] h-2 rounded-full" style="width: 95%"></div>
+                                <div class="space-y-0.5 min-w-0">
+                                    <div class="flex items-center justify-between gap-2">
+                                        <h4 class="text-xs font-sans font-bold text-midnight uppercase tracking-wide">Journey Completed Anonymously</h4>
+                                        <span class="text-[9px] font-mono text-muted shrink-0">6sense</span>
+                                    </div>
+                                    <p class="text-xs text-charcoal/80 leading-relaxed">
+                                        Enterprise buying committees finalize requirements and shortlists before ever filling a form.
+                                    </p>
                                 </div>
                             </div>
 
-                            <!-- Multi-Engine Citation Chips -->
-                            <div class="pt-3 border-t border-borderLine/70">
-                                <div class="text-[10px] font-mono uppercase tracking-wider text-muted mb-2">Verified Across AI Engines</div>
+                            <!-- Stat 04: 3.2x Citation Velocity -->
+                            <div class="p-3 rounded-xl bg-warmNeutral/40 border border-borderLine/70 flex items-start gap-3.5 hover:border-[#3E6554]/40 transition-colors">
+                                <div class="font-sans font-bold text-2xl sm:text-3xl text-[#3E6554] tracking-tight shrink-0 w-14">
+                                    3.2<span class="text-copper text-base font-serif italic">x</span>
+                                </div>
+                                <div class="space-y-0.5 min-w-0">
+                                    <div class="flex items-center justify-between gap-2">
+                                        <h4 class="text-xs font-sans font-bold text-midnight uppercase tracking-wide">AI Citation Velocity</h4>
+                                        <span class="text-[9px] font-mono text-muted shrink-0">Engine Study</span>
+                                    </div>
+                                    <p class="text-xs text-charcoal/80 leading-relaxed">
+                                        Verified entity knowledge graphs and fresh schema markup earn over 3x more LLM answer citations.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Verified Across AI Engines Chips -->
+                            <div class="pt-2 border-t border-borderLine/70">
+                                <div class="text-[10px] font-mono uppercase tracking-wider text-muted mb-2">Where Buyers Evaluate Your Brand Today</div>
                                 <div class="grid grid-cols-2 gap-2 text-[10px] font-mono">
                                     <div class="px-2 py-1.5 rounded-lg bg-warmNeutral/60 border border-borderLine flex items-center justify-between gap-1">
                                         <span class="text-charcoal/80">ChatGPT</span>
-                                        <span class="font-bold text-copper flex items-center gap-1 shrink-0"><i class="fa-solid fa-check text-[9px]"></i> 67% SoM</span>
+                                        <span class="font-bold text-copper flex items-center gap-1 shrink-0"><i class="fa-solid fa-check text-[9px]"></i> Authority</span>
                                     </div>
                                     <div class="px-2 py-1.5 rounded-lg bg-warmNeutral/60 border border-borderLine flex items-center justify-between gap-1">
                                         <span class="text-charcoal/80">Perplexity</span>
@@ -372,7 +365,7 @@
                                     </div>
                                     <div class="px-2 py-1.5 rounded-lg bg-warmNeutral/60 border border-borderLine flex items-center justify-between gap-1">
                                         <span class="text-charcoal/80">Google AIO</span>
-                                        <span class="font-bold text-[#3E6554] flex items-center gap-1 shrink-0"><i class="fa-solid fa-check text-[9px]"></i> Snippet</span>
+                                        <span class="font-bold text-[#3E6554] flex items-center gap-1 shrink-0"><i class="fa-solid fa-check text-[9px]"></i> Snippets</span>
                                     </div>
                                 </div>
                             </div>
@@ -382,9 +375,9 @@
                         <!-- Card Footer -->
                         <div class="px-5 sm:px-6 py-3 bg-warmNeutral/70 border-t border-borderLine flex items-center justify-between text-[11px] font-mono">
                             <span class="text-muted flex items-center gap-1.5">
-                                <i class="fa-solid fa-circle-check text-copper"></i> Active Sprint 01
+                                <i class="fa-solid fa-bullhorn text-copper"></i> Strategic Implication:
                             </span>
-                            <span class="font-bold text-midnight">90-Day Roadmap Ready</span>
+                            <span class="font-bold text-midnight">If AI doesn't cite you, buyers don't find you.</span>
                         </div>
 
                     </div>
